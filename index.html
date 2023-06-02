@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- font path  -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- font path  -->
     <link rel="stylesheet" href="main.css"> <!-- link html file to css file -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> <!-- карусель зображень -->
     <style>
         html {
             scroll-behavior: smooth; /* scroll slow */
@@ -67,12 +68,34 @@
     <section id="whyread" class="whyread"> <!-- section for info -->
         <div class="container"> <!-- section, name container  -->
             <h1>Why you should read books</h1> <!-- heading text -->
+            <a href="https://www.youtube.com/@JackClose" target="_blank"> 
+                by Jack Close 
+            </a>
             <div class="video">
                 <video controls width="660" height="415">
                     <source src="img/books.mp4" type="video/mp4">
                 </video>
             </div>
-            <p>by Practical Wisdom - Interesting Ideas</p>
+            
+        </div>
+    </section>
+
+    <section id="whatbooks" class="whatbooks">  
+        <div class="container">
+            <h1>What books are we talking about?</h1> <!-- heading text -->
+            <div class="carousel">
+                <img src="img/img1.jpg" alt="Image 1">
+                <img src="img/img2.jpg" alt="Image 1">
+                <img src="img/img3.jpg" alt="Image 1">
+                <img src="img/img4.jpg" alt="Image 1">
+                <img src="img/img5.jpg" alt="Image 1">
+                <img src="img/img6.jpg" alt="Image 1">
+                <img src="img/img7.jpg" alt="Image 1">
+                <img src="img/img8.jpg" alt="Image 1">
+                <img src="img/img9.jpg" alt="Image 1">
+                <button class="slick-prev" aria-label="Previous" type="button">&#10094;</button>
+                <button class="slick-next" aria-label="Next" type="button">&#10095;</button>
+            </div>
         </div>
     </section>
 
@@ -100,5 +123,15 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                prevArrow: false,
+                nextArrow: false
+            });
+        });
+    </script>
 </body>
 </html>
