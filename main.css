@@ -5,7 +5,6 @@
     font-size: 16px;
     box-sizing: border-box;
     text-decoration: none;
-    
 }
 
 .nav { /* редагування розміщення heading */
@@ -107,9 +106,17 @@ ul, li { /* розташування списків */
     align-items: center; 
 }
 
-.whyread p { /* редагування вигляду тексту */
+.whyread a {
+    text-decoration: underline;
+    color: inherit;
     font-size: 25px; 
-    text-align: center;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.whatbooks h1 { /* редагування вигляду заголовка */
+    font-size: 65px; 
+    letter-spacing: 7px; 
     line-height: 2em;
 }
 
@@ -143,4 +150,36 @@ ul, li { /* розташування списків */
     text-align: center;
     color: white;
     padding-top: 80px;
+}
+
+.carousel {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
 }
