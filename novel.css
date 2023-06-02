@@ -31,7 +31,7 @@ ul, li { /* розташування списків */
 }
 
 .header { /* редагування вигляду header */
-    background: url('../Readopolis/img/main_ph.jpg') center no-repeat; /* встановлення зображення */
+    background: url('../readopolis/img/main_ph.jpg') center no-repeat; /* встановлення зображення */
     background-size: cover; 
     height: 30vh; 
 }
