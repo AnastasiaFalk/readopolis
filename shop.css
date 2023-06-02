@@ -70,10 +70,19 @@ ul, li { /* розташування списків */
     transition: .4s ease;
 }
 
+.shop h1 {
+    font-size: 60px;
+    padding-top: 50px;
+}
+
 .form-group {
     flex-direction: column;
     justify-content: end;
     padding-bottom: 2vh;
+}
+
+.form-group label {
+    font-size: 25px;
 }
 
 .form-label {
@@ -104,6 +113,22 @@ ul, li { /* розташування списків */
     transition: .4s ease;
 }
 
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+select[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 .footer { /* створення вигляду footer */
     background-color: black;
     height: 184px;
@@ -111,9 +136,4 @@ ul, li { /* розташування списків */
     text-align: center;
     color: white;
     padding-top: 80px;
-}
-
-.shop h1 {
-    font-size: 40px;
-    padding: 50px;
 }
